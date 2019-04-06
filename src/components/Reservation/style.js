@@ -100,6 +100,7 @@ const Button = styled.button`
   font-family: 'Cabin';
   margin-top: 2.5rem;
   transition: all 0.2s;
+  outline: none;
   cursor: pointer;
 
   &:hover {

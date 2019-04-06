@@ -23,6 +23,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   font-weight: 500;
   transition: all 0.2s;
+  outline: none;
   cursor: pointer;
 
   &:hover {
@@ -33,7 +34,7 @@ const Button = styled.button`
 
 const PageMenu = styled.div`
   text-align: center;
-  padding: 5rem 0;
+  padding: 7rem 0;
   margin-bottom: 3rem;
 `;
 

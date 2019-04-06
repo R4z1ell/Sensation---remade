@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const AboutUs = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 120rem;
   margin: 180px auto;

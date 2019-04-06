@@ -13,6 +13,10 @@ import {
 } from './style';
 
 const Reservation = () => {
+  const handleClick = event => {
+    event.preventDefault();
+  };
+
   return (
     <Wrapper>
       <Container>
@@ -40,7 +44,7 @@ const Reservation = () => {
           <input type="text" placeholder="1 People" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Phone Number" />
-          <Button>book a table</Button>
+          <Button onClick={handleClick}>book a table</Button>
         </Form>
       </Container>
     </Wrapper>

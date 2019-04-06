@@ -1,0 +1,118 @@
+import styled from 'styled-components';
+
+const SectionTestimonial = styled.section`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),
+    url(${props => props.bck});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+const MainHeading = styled.h2`
+  color: #cfa670;
+  font-family: 'Tangerine';
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 5rem;
+`;
+
+const SubHeading = styled.h2`
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+`;
+
+const Image = styled.img`
+  position: absolute;
+  top: -24%;
+  border-radius: 50%;
+`;
+
+const Left = styled.div`
+  width: 43.5%;
+  height: 25.5rem;
+  border: 5px solid #cfa670;
+  position: relative;
+  text-align: center;
+
+  ${Image} {
+    left: -12%;
+  }
+`;
+
+const Right = styled.div`
+  width: 43.5%;
+  height: 25.5rem;
+  border: 5px solid #cfa670;
+  position: relative;
+  text-align: center;
+
+  ${Image} {
+    right: -12%;
+  }
+`;
+
+const Title = styled.h4`
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+`;
+
+const Text = styled.p`
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+  padding: 0 7%;
+`;
+
+const Pagination = styled.div`
+  text-align: center;
+  margin-top: 6rem;
+`;
+
+const Page = styled.span`
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 0.5rem;
+  width: 5rem;
+  height: 0.5rem;
+  transition: color 0.3s;
+
+  &:hover {
+    background-color: #cfa670;
+  }
+`;
+
+const Container = styled.div`
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 7rem 0;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 6rem;
+`;
+
+export {
+  SectionTestimonial,
+  MainHeading,
+  SubHeading,
+  Image,
+  Left,
+  Right,
+  Title,
+  Text,
+  Pagination,
+  Page,
+  Container,
+  Wrapper
+};
