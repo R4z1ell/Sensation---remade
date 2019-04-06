@@ -2,6 +2,8 @@ import React from 'react';
 import GlobalStyle from './shared/GlobalStyle';
 import Home from './components/Home';
 import About from './components/About';
+import Reservation from './components/Reservation';
+import Menu from './components/Menu';
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <GlobalStyle />
       <Home />
       <About />
+      <Reservation />
+      <Menu />
     </React.Fragment>
   );
 };

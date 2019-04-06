@@ -28,7 +28,6 @@ const About = () => {
           indisputable Italian cuisine.
         </Story>
       </Wrapper>
-
       <WrapperImages>
         <img src="/images/steak.jpg" alt="steak" />
         <ImagesContainer>
