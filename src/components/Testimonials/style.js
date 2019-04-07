@@ -67,7 +67,6 @@ const Text = styled.p`
   color: #fff;
   font-size: 1.7rem;
   line-height: 2.8rem;
-  margin-bottom: 2rem;
   padding: 0 7%;
 `;
 

@@ -7,6 +7,8 @@ import Menu from './components/Menu';
 import Gallery from './components/Gallery';
 import Blog from './components/Blog';
 import Testimonials from './components/Testimonials';
+import Services from './components/Services';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
       <Gallery />
       <Blog />
       <Testimonials />
+      <Services />
+      <Footer />
     </React.Fragment>
   );
 };
