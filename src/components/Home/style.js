@@ -9,59 +9,6 @@ const Header = styled.header`
   height: 100vh;
 `;
 
-const Navigation = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 120rem;
-  margin: 0 auto;
-`;
-
-const NavigationLogo = styled.div`
-  font-family: 'Tangerine';
-  font-size: 5.9rem;
-  font-weight: 700;
-  color: #fff;
-`;
-
-const NavigationNav = styled.nav`
-  margin-top: 1.4rem;
-`;
-
-const NavigationList = styled.ul`
-  display: flex;
-  list-style: none;
-`;
-
-const NavigationLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-
-  &:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0.2rem;
-    background: #cfa670;
-    transition: width 0.3s;
-  }
-`;
-
-const NavigationItem = styled.li`
-  font-size: 1.7rem;
-  font-weight: 500;
-  margin-right: 4.2rem;
-  cursor: pointer;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-
-  &:hover ${NavigationLink}:after {
-    width: 100%;
-  }
-`;
-
 const HeadingPrimary = styled.h1`
   display: flex;
   flex-direction: column;
@@ -126,12 +73,6 @@ const ButtonGhost = styled(Button)`
 
 export {
   Header,
-  Navigation,
-  NavigationLogo,
-  NavigationNav,
-  NavigationList,
-  NavigationLink,
-  NavigationItem,
   HeadingPrimary,
   MainHeading,
   SubHeading,

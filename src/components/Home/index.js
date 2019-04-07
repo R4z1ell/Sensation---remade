@@ -1,13 +1,9 @@
 import React from 'react';
+import { scroller } from 'react-scroll';
+import Navigation from './Navigation';
 
 import {
   Header,
-  Navigation,
-  NavigationLogo,
-  NavigationNav,
-  NavigationList,
-  NavigationItem,
-  NavigationLink,
   HeadingPrimary,
   MainHeading,
   SubHeading,
@@ -17,40 +13,32 @@ import {
 } from './style';
 
 const Home = () => {
+  const scrollToElement = element => {
+    if (element === 'Footer') {
+      scroller.scrollTo(element, {
+        duration: 2500,
+        smooth: true
+      });
+    } else {
+      scroller.scrollTo(element, {
+        duration: 1500,
+        smooth: true
+      });
+    }
+  };
+
   return (
     <Header>
-      <Navigation>
-        <NavigationLogo>Sensation</NavigationLogo>
-        <NavigationNav>
-          <NavigationList>
-            <NavigationItem>
-              <NavigationLink>Home</NavigationLink>
-            </NavigationItem>
-            <NavigationItem>
-              <NavigationLink>Menu</NavigationLink>
-            </NavigationItem>
-            <NavigationItem>
-              <NavigationLink>Gallery</NavigationLink>
-            </NavigationItem>
-            <NavigationItem>
-              <NavigationLink>Blog</NavigationLink>
-            </NavigationItem>
-            <NavigationItem>
-              <NavigationLink>Testimonials</NavigationLink>
-            </NavigationItem>
-            <NavigationItem>
-              <NavigationLink>Services</NavigationLink>
-            </NavigationItem>
-          </NavigationList>
-        </NavigationNav>
-      </Navigation>
+      <Navigation />
       <HeadingPrimary>
         <MainHeading>Best place for family &#38; friends</MainHeading>
         <SubHeading>with delicious &#38; healthy food</SubHeading>
       </HeadingPrimary>
       <Wrapper>
-        <Button>book now</Button>
-        <ButtonGhost>contact us</ButtonGhost>
+        <Button onClick={() => scrollToElement('Reservation')}>book now</Button>
+        <ButtonGhost onClick={() => scrollToElement('Footer')}>
+          contact us
+        </ButtonGhost>
       </Wrapper>
     </Header>
   );

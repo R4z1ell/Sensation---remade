@@ -1,4 +1,6 @@
 import React from 'react';
+import { Element } from 'react-scroll';
+
 import GlobalStyle from './shared/GlobalStyle';
 import Home from './components/Home';
 import About from './components/About';
@@ -14,15 +16,33 @@ const App = () => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Home />
-      <About />
-      <Reservation />
-      <Menu />
-      <Gallery />
-      <Blog />
-      <Testimonials />
-      <Services />
-      <Footer />
+      <Element name="Home">
+        <Home />
+      </Element>
+      <Element name="About">
+        <About />
+      </Element>
+      <Element name="Reservation">
+        <Reservation />
+      </Element>
+      <Element name="Menu">
+        <Menu />
+      </Element>
+      <Element name="Gallery">
+        <Gallery />
+      </Element>
+      <Element name="Blog">
+        <Blog />
+      </Element>
+      <Element name="Testimonials">
+        <Testimonials />
+      </Element>
+      <Element name="Services">
+        <Services />
+      </Element>
+      <Element name="Footer">
+        <Footer />
+      </Element>
     </React.Fragment>
   );
 };

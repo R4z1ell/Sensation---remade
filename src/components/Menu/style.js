@@ -61,6 +61,7 @@ const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  transform: translateX(4.5rem);
 `;
 
 export { SectionMenu, ButtonMenu, Button, PageMenu, Page, CardsWrapper };
