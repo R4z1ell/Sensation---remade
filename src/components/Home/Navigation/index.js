@@ -28,10 +28,25 @@ const Navigation = () => {
   };
 
   const scrollToElement = element => {
-    scroller.scrollTo(element, {
-      duration: 1500,
-      smooth: true
-    });
+    if (element === 'Home') {
+      scroller.scrollTo(element, {
+        duration: 1500,
+        smooth: true
+      });
+    }
+    if (element === 'Blog') {
+      scroller.scrollTo(element, {
+        duration: 1500,
+        smooth: true,
+        offset: -130
+      });
+    } else {
+      scroller.scrollTo(element, {
+        duration: 1500,
+        smooth: true,
+        offset: -60
+      });
+    }
   };
 
   return (

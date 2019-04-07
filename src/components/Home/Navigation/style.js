@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 const NavigationWrapper = styled.div`
   display: flex;
-  position: ${props => (props.offset > 1007 ? 'fixed' : 'initial')};
+  position: ${props => (props.offset > 1007 ? 'fixed' : '')};
   justify-content: space-between;
   align-items: center;
   max-width: ${props => (props.offset > 1007 ? '100%' : '120rem')};
   width: ${props => (props.offset > 1007 ? '100%' : '120rem')};
-  height: ${props => (props.offset > 1007 ? '6rem' : 'initial')};
+  height: ${props => (props.offset > 1007 ? '6rem' : '')};
   margin: 0 auto;
-  background-color: ${props => (props.offset > 1007 ? '#fff' : 'transparent')};
-  box-shadow: ${props => (props.offset > 1007 ? '0 2px 2px #2323' : 'none')};
-  z-index: ${props => (props.offset > 1007 ? '50' : 'auto')};
+  background-color: ${props => (props.offset > 1007 ? '#fff' : '')};
+  box-shadow: ${props => (props.offset > 1007 ? '0 2px 2px #2323' : '')};
+  z-index: ${props => (props.offset > 1007 ? '50' : '')};
 `;
 
 const NavigationLogo = styled.div`

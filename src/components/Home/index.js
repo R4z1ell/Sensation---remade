@@ -16,13 +16,14 @@ const Home = () => {
   const scrollToElement = element => {
     if (element === 'Footer') {
       scroller.scrollTo(element, {
-        duration: 2500,
+        duration: 2000,
         smooth: true
       });
     } else {
       scroller.scrollTo(element, {
         duration: 1500,
-        smooth: true
+        smooth: true,
+        offset: -60
       });
     }
   };
