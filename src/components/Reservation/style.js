@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-image: url(/images/reservation-bck.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,7 +47,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-evenly;
   max-width: 120rem;
-  margin: 0 18.46%;
+  margin: 0 auto;
 `;
 
 const Form = styled.form`

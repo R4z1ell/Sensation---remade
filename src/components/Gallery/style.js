@@ -31,6 +31,7 @@ const Figure = styled.figure`
   position: relative;
   width: calc(100vw / 4);
   cursor: pointer;
+  overflow: hidden;
 
   &:hover:before {
     opacity: 1;

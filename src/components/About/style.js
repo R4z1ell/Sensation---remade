@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const AboutUs = styled.section`
   display: flex;
@@ -51,6 +52,10 @@ const WrapperImages = styled(Wrapper)`
     width: 69%;
     height: 31.6rem;
     margin-right: 0.5rem;
+
+    @media ${device.desktopL} {
+      height: 35.6rem;
+    }
   }
 `;
 

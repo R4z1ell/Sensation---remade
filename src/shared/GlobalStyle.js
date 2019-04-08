@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { device } from './MediaQueries';
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -13,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 62.5%;
     overflow-x: hidden;
+
+    @media ${device.desktopL} {
+    font-size: 55%;
+    }
   }
 
   body {

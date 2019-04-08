@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../shared/MediaQueries';
 
 const NavigationWrapper = styled.div`
   display: flex;
@@ -6,12 +7,17 @@ const NavigationWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: ${props => (props.offset > 1007 ? '100%' : '120rem')};
-  width: ${props => (props.offset > 1007 ? '100%' : '120rem')};
+  width: ${props => (props.offset > 1007 ? '100%' : '')};
   height: ${props => (props.offset > 1007 ? '6rem' : '')};
   margin: 0 auto;
   background-color: ${props => (props.offset > 1007 ? '#fff' : '')};
-  box-shadow: ${props => (props.offset > 1007 ? '0 2px 2px #2323' : '')};
+  box-shadow: ${props =>
+    props.offset > 1007 ? '1px 0px 5px 2px rgba(0,0,0,0.1)' : ''};
   z-index: ${props => (props.offset > 1007 ? '50' : '')};
+
+  @media ${device.desktopL} {
+    max-width: ${props => (props.offset > 1007 ? '100%' : '92%')};
+  }
 `;
 
 const NavigationLogo = styled.div`

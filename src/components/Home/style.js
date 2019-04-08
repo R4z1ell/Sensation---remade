@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   position: absolute;
   width: 100%;
   top: 58%;
+  margin-top: 2rem;
 `;
 
 const Button = styled.a`
