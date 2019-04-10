@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const Header = styled.header`
   background-image: url(/images/home-bck.jpg);
@@ -24,6 +25,14 @@ const MainHeading = styled.span`
   font-size: 7.5rem;
   color: #cfa670;
   line-height: 8rem;
+
+  @media ${device.tabletM} {
+    font-size: 6.5rem;
+  }
+
+  @media ${device.mobileB} {
+    font-size: 5.5rem;
+  }
 `;
 
 const SubHeading = styled.span`
@@ -31,6 +40,15 @@ const SubHeading = styled.span`
   font-size: 5.5rem;
   color: #fff;
   line-height: 5rem;
+
+  @media ${device.tabletM} {
+    font-size: 4.5rem;
+  }
+
+  @media ${device.mobileB} {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -41,6 +59,14 @@ const Wrapper = styled.div`
   width: 100%;
   top: 58%;
   margin-top: 2rem;
+
+  @media ${device.desktopL} {
+    margin-top: 0;
+  }
+
+  @media ${device.mobileB} {
+    top: 57%;
+  }
 `;
 
 const Button = styled.a`

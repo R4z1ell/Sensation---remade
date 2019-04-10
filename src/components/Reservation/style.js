@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const Wrapper = styled.section`
   background-image: url(/images/reservation-bck.png);
@@ -6,6 +7,10 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4.5% 0;
+
+  @media ${device.desktopS} {
+    padding: 10.5% 0;
+  }
 `;
 
 const ReservationCard = styled.div`
@@ -14,8 +19,13 @@ const ReservationCard = styled.div`
   width: 45%;
   height: 37.8rem;
 
+  @media ${device.desktopS} {
+    width: 51rem;
+    margin-bottom: 5rem;
+  }
+
   img {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
   }
 `;
 
@@ -48,6 +58,10 @@ const Container = styled.div`
   justify-content: space-evenly;
   max-width: 120rem;
   margin: 0 auto;
+
+  @media ${device.desktopS} {
+    flex-direction: column;
+  }
 `;
 
 const Form = styled.form`
@@ -109,15 +123,22 @@ const Button = styled.button`
 const OpeningWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 4rem;
+  margin-top: 3.5rem;
 
-  p:nth-child(2) {
-    margin-right: 4rem;
+  ${Opening}:first-of-type {
+    width: 25.5%;
+
+    @media ${device.desktopL} {
+      width: 30.5%;
+    }
   }
 
-  p:nth-child(3) {
-    margin-right: 1rem;
-    transform: translateX(-3rem);
+  ${Opening} {
+    width: 24.5%;
+
+    @media ${device.desktopL} {
+      width: 28.5%;
+    }
   }
 `;
 

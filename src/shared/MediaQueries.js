@@ -4,9 +4,9 @@ const sizes = {
   desktopM: '1000px',
   desktopS: '940px',
   tabletL: '811px',
-  tabletM: '710px',
+  tabletM: '660px',
   tabletS: '625px',
-  mobileB: '525px',
+  mobileB: '550px',
   mobileL: '425px',
   mobileM: '375px',
   mobileS: '320px'
