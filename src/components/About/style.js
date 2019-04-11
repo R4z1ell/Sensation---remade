@@ -46,7 +46,7 @@ const Story = styled.p`
 
   @media ${device.desktopS} {
     margin-top: 9rem;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 3.5rem;
   }
 `;

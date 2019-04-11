@@ -42,6 +42,10 @@ const SubHeading = styled.h2`
   font-weight: 400;
   line-height: 4.7rem;
   color: ${props => (props.sub ? '#fff' : '#232323')};
+
+  @media ${device.desktopM} {
+    font-size: 3.7rem;
+  }
 `;
 
 const Opening = styled.p`

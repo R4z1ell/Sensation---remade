@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionGallery = styled.section`
   background-color: #232323;
@@ -14,6 +15,15 @@ const Title = styled.h2`
 
 const FigureWrapper = styled.figure`
   display: flex;
+
+  @media ${device.desktopM} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media ${device.mobileB} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const FigCaption = styled.figcaption`
@@ -32,6 +42,11 @@ const Figure = styled.figure`
   width: calc(100vw / 4);
   cursor: pointer;
   overflow: hidden;
+
+  @media ${device.desktopM} {
+    width: 100%;
+    height: 100%;
+  }
 
   &:hover:before {
     opacity: 1;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionFooter = styled.footer`
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -14,6 +15,10 @@ const Logo = styled.div`
   font-weight: 700;
   color: #fff;
   padding-top: 3rem;
+
+  @media ${device.desktopL} {
+    padding-top: 5.5rem;
+  }
 `;
 
 const Image = styled.img`
@@ -30,6 +35,10 @@ const Image = styled.img`
 const Info = styled.div`
   display: flex;
   align-items: center;
+
+  @media ${device.tabletM} {
+    margin-bottom: 3rem;
+  }
 
   ${Image} {
     margin-right: 2.5rem;
@@ -52,6 +61,10 @@ const Divider = styled.div`
   height: 1px;
   background-color: #cfa670;
   margin: 7.5rem auto 5.2rem auto;
+
+  @media ${device.tabletM} {
+    margin: 4.5rem auto 7.5rem auto;
+  }
 `;
 
 const Copyright = styled.span`
@@ -65,6 +78,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
   text-align: center;
   padding-bottom: 5rem;
+
+  @media ${device.desktopL} {
+    padding-bottom: 5.5rem;
+  }
 
   span svg {
     width: 3rem;
@@ -87,6 +104,16 @@ const InfoContainer = styled.div`
   justify-content: space-between;
   max-width: 77.5rem;
   margin: 7rem auto 0 auto;
+
+  @media ${device.tabletL} {
+    padding: 0 3%;
+  }
+
+  @media ${device.tabletM} {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7% 0 0;
+  }
 `;
 
 const SvgWrapper = styled.div`
@@ -94,6 +121,26 @@ const SvgWrapper = styled.div`
   margin: 1rem auto 0 auto;
   width: 13%;
   justify-content: space-evenly;
+
+  @media ${device.desktopM} {
+    width: 14%;
+  }
+
+  @media ${device.desktopS} {
+    width: 17%;
+  }
+
+  @media ${device.tabletL} {
+    width: 20%;
+  }
+
+  @media ${device.tabletM} {
+    width: 22%;
+  }
+
+  @media ${device.tabletS} {
+    width: 26%;
+  }
 `;
 
 export {

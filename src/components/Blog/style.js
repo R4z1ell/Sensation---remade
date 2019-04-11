@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionBlog = styled.section`
   max-width: 120rem;
-  margin: 10rem auto 15rem auto;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
 `;
 
 const MainHeading = styled.h2`
@@ -23,6 +26,17 @@ const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
+
+  @media (max-width: 1120px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    justify-items: center;
+  }
+
+  @media ${device.tabletL} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export { SectionBlog, MainHeading, SubHeading, CardsWrapper };

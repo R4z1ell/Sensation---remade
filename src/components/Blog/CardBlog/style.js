@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../shared/MediaQueries';
 
 const Figure = styled.figure`
   position: relative;
@@ -45,6 +46,36 @@ const CardWrapper = styled.div`
   &:hover ${FigCaption} {
     opacity: 1;
     z-index: 5;
+  }
+
+  @media (max-width: 1120px) {
+    &:nth-child(1) {
+      justify-self: end;
+    }
+
+    &:nth-child(2) {
+      justify-self: start;
+    }
+
+    &:nth-child(3) {
+      justify-self: end;
+      transform: translateX(21.5rem);
+    }
+  }
+
+  @media ${device.tabletL} {
+    &:nth-child(1) {
+      justify-self: center;
+    }
+
+    &:nth-child(2) {
+      justify-self: center;
+    }
+
+    &:nth-child(3) {
+      justify-self: center;
+      transform: translateX(0);
+    }
   }
 `;
 

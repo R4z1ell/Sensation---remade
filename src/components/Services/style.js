@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionServices = styled.section`
   max-width: 120rem;
@@ -32,6 +33,23 @@ const ServiceCard = styled.div`
   border: 3px solid #232323;
   width: calc(120rem / 3 - 4.5%);
   height: 22.6rem;
+
+  @media ${device.desktopM} {
+    width: 32rem;
+  }
+
+  @media ${device.desktopS} {
+    width: 30rem;
+  }
+
+  @media (max-width: 850px) {
+    width: 50rem;
+    margin-bottom: 3rem;
+  }
+
+  @media ${device.mobileB} {
+    width: 40rem;
+  }
 `;
 
 const Image = styled.img`
@@ -58,6 +76,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 6rem;
+  flex-wrap: wrap;
 `;
 
 export {

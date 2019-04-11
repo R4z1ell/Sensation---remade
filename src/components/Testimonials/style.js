@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionTestimonial = styled.section`
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),
@@ -28,6 +29,15 @@ const Image = styled.img`
   position: absolute;
   top: -24%;
   border-radius: 50%;
+
+  @media (max-width: 1120px) {
+    width: 11rem;
+    top: -25%;
+  }
+
+  @media ${device.tabletM} {
+    top: -22%;
+  }
 `;
 
 const Left = styled.div`
@@ -37,8 +47,38 @@ const Left = styled.div`
   position: relative;
   text-align: center;
 
+  @media (max-width: 1120px) {
+    width: 57%;
+    margin: 0 auto 8rem auto;
+  }
+
+  @media ${device.tabletL} {
+    height: 26.5rem;
+    width: 70%;
+  }
+
+  @media ${device.mobileB} {
+    height: 28.5rem;
+  }
+
   ${Image} {
     left: -12%;
+
+    @media (max-width: 1120px) {
+      left: -9%;
+    }
+
+    @media ${device.desktopM} {
+      left: -10%;
+    }
+
+    @media ${device.tabletM} {
+      left: -12%;
+    }
+
+    @media ${device.mobileB} {
+      left: -15%;
+    }
   }
 `;
 
@@ -49,8 +89,37 @@ const Right = styled.div`
   position: relative;
   text-align: center;
 
+  @media (max-width: 1120px) {
+    width: 57%;
+  }
+
+  @media ${device.tabletL} {
+    height: 26.5rem;
+    width: 70%;
+  }
+
+  @media ${device.mobileB} {
+    height: 28.5rem;
+  }
+
   ${Image} {
     right: -12%;
+
+    @media (max-width: 1120px) {
+      right: -8%;
+    }
+
+    @media ${device.desktopM} {
+      right: -9%;
+    }
+
+    @media ${device.tabletM} {
+      right: -11%;
+    }
+
+    @media ${device.mobileB} {
+      right: -14%;
+    }
   }
 `;
 
@@ -73,6 +142,10 @@ const Text = styled.p`
 const Pagination = styled.div`
   text-align: center;
   margin-top: 6rem;
+
+  @media (max-width: 1120px) {
+    margin-top: 8rem;
+  }
 `;
 
 const Page = styled.span`
@@ -93,12 +166,21 @@ const Container = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 7rem 0;
+
+  @media (max-width: 1120px) {
+    padding: 10rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 6rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 1120px) {
+    margin-top: 8rem;
+  }
 `;
 
 export {

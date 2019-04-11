@@ -38,13 +38,20 @@ const Navigation = () => {
       scroller.scrollTo(element, {
         duration: 1500,
         smooth: true,
-        offset: -130
+        offset: window.innerWidth > 1300 ? -60 : -52.8
+      });
+    }
+    if (element === 'Services') {
+      scroller.scrollTo(element, {
+        duration: 1500,
+        smooth: true,
+        offset: -50
       });
     } else {
       scroller.scrollTo(element, {
         duration: 1500,
         smooth: true,
-        offset: -60
+        offset: window.innerWidth > 1300 ? -60 : -52.8
       });
     }
   };
