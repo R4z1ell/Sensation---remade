@@ -62,53 +62,25 @@ const Navigation = () => {
         <NavigationLogo offset={prevScrollpos}>Sensation</NavigationLogo>
         <NavigationNav offset={prevScrollpos}>
           <NavigationList>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Home')}
-                offset={prevScrollpos}
-              >
-                Home
-              </NavigationLink>
+            <NavigationItem onClick={() => scrollToElement('Home')}>
+              <NavigationLink offset={prevScrollpos}>Home</NavigationLink>
             </NavigationItem>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Menu')}
-                offset={prevScrollpos}
-              >
-                Menu
-              </NavigationLink>
+            <NavigationItem onClick={() => scrollToElement('Menu')}>
+              <NavigationLink offset={prevScrollpos}>Menu</NavigationLink>
             </NavigationItem>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Gallery')}
-                offset={prevScrollpos}
-              >
-                Gallery
-              </NavigationLink>
+            <NavigationItem onClick={() => scrollToElement('Gallery')}>
+              <NavigationLink offset={prevScrollpos}>Gallery</NavigationLink>
             </NavigationItem>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Blog')}
-                offset={prevScrollpos}
-              >
-                Blog
-              </NavigationLink>
+            <NavigationItem onClick={() => scrollToElement('Blog')}>
+              <NavigationLink offset={prevScrollpos}>Blog</NavigationLink>
             </NavigationItem>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Testimonials')}
-                offset={prevScrollpos}
-              >
+            <NavigationItem onClick={() => scrollToElement('Testimonials')}>
+              <NavigationLink offset={prevScrollpos}>
                 Testimonials
               </NavigationLink>
             </NavigationItem>
-            <NavigationItem>
-              <NavigationLink
-                onClick={() => scrollToElement('Services')}
-                offset={prevScrollpos}
-              >
-                Services
-              </NavigationLink>
+            <NavigationItem onClick={() => scrollToElement('Services')}>
+              <NavigationLink offset={prevScrollpos}>Services</NavigationLink>
             </NavigationItem>
           </NavigationList>
         </NavigationNav>

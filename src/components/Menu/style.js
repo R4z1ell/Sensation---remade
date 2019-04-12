@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../shared/MediaQueries';
 
 const SectionMenu = styled.section`
   max-width: 120rem;
@@ -8,6 +9,14 @@ const SectionMenu = styled.section`
 const ButtonMenu = styled.div`
   text-align: center;
   margin: 10rem 0;
+
+  @media (max-width: 1100px) {
+    margin: 10rem 0 17rem 0;
+  }
+
+  @media ${device.tabletL} {
+    margin: 10rem 0 10rem 0;
+  }
 `;
 
 const Button = styled.button`
@@ -36,6 +45,14 @@ const PageMenu = styled.div`
   text-align: center;
   padding: 7rem 0;
   margin-bottom: 3rem;
+
+  @media (max-width: 1100px) {
+    padding: 0 0 7rem 0;
+  }
+
+  @media ${device.tabletL} {
+    padding: 7rem 0 7rem 0;
+  }
 `;
 
 const Page = styled.a`
@@ -62,6 +79,16 @@ const CardsWrapper = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   transform: translateX(4.5rem);
+
+  @media (max-width: 1100px) {
+    justify-content: space-evenly;
+    transform: translateX(0);
+  }
+
+  @media ${device.tabletL} {
+    justify-content: center;
+    transform: translateX(4rem);
+  }
 `;
 
 export { SectionMenu, ButtonMenu, Button, PageMenu, Page, CardsWrapper };

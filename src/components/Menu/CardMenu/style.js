@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../shared/MediaQueries';
 
 const Card = styled.div`
   position: relative;
@@ -9,6 +10,22 @@ const Card = styled.div`
   border-right: 5px solid transparent;
   transition: all ease 0.1s;
   cursor: pointer;
+
+  @media (max-width: 1100px) {
+    padding: 8rem 3rem 4rem 5.3rem;
+    margin-bottom: 10rem;
+    width: 48.5rem;
+  }
+
+  @media ${device.desktopS} {
+    width: 41.5rem;
+  }
+
+  @media ${device.tabletL} {
+    padding: 4rem 3rem 4rem 12.3rem;
+    margin-bottom: 5rem;
+    width: 60rem;
+  }
 
   &:hover {
     border-right: 5px solid #cfa670;
@@ -26,6 +43,14 @@ const Price = styled.span`
   font-weight: 700;
   color: #cfa670;
   margin-right: 0.5rem;
+
+  @media (max-width: 1100px) {
+    margin-right: 1.3rem;
+  }
+
+  @media ${device.desktopS} {
+    margin-right: 0rem;
+  }
 `;
 
 const Text = styled.p`
@@ -34,6 +59,10 @@ const Text = styled.p`
   line-height: 2.8rem;
   margin-top: 2.3rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 1100px) {
+    font-size: 1.9rem;
+  }
 `;
 
 const OrderLink = styled.a`
@@ -52,6 +81,16 @@ const Image = styled.img`
   position: absolute;
   top: 28.5%;
   left: -19%;
+
+  @media (max-width: 1100px) {
+    top: -20.5%;
+    left: 31%;
+  }
+
+  @media ${device.tabletL} {
+    top: 27.5%;
+    left: -15%;
+  }
 `;
 
 export { Card, Heading, Price, Text, OrderLink, Image };
