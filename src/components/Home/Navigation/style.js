@@ -34,6 +34,10 @@ const NavigationNav = styled.nav`
 const NavigationList = styled.ul`
   display: flex;
   list-style: none;
+
+  @media ${device.tabletL} {
+    display: none;
+  }
 `;
 
 const NavigationLink = styled.a`
@@ -73,6 +77,10 @@ const Container = styled.div`
   width: ${props => (props.offset > 1007 ? '120rem' : '100%')};
   margin: ${props => (props.offset > 1007 ? '0 auto' : '')};
   height: ${props => (props.offset > 1007 ? '6rem' : '')};
+
+  @media ${device.desktopL} {
+    width: ${props => (props.offset > 1007 ? '90%' : '100%')};
+  }
 `;
 
 export {

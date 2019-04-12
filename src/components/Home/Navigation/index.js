@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { scroller } from 'react-scroll';
+import Hamburger from '../Hamburger';
 
 import {
   NavigationWrapper,
@@ -84,6 +85,7 @@ const Navigation = () => {
             </NavigationItem>
           </NavigationList>
         </NavigationNav>
+        <Hamburger />
       </Container>
     </NavigationWrapper>
   );

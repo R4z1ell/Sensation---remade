@@ -13,11 +13,11 @@ const Header = styled.header`
 const HeadingPrimary = styled.h1`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center;
   font-weight: 700;
   position: absolute;
   width: 100%;
-  top: 44%;
+  top: 44%; */
 `;
 
 const MainHeading = styled.span`
@@ -53,20 +53,20 @@ const SubHeading = styled.span`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
   position: absolute;
   width: 100%;
-  top: 58%;
-  margin-top: 2rem;
+  top: 58%; */
+  margin-top: 4rem;
 
-  @media ${device.desktopL} {
+  /* @media ${device.desktopL} {
     margin-top: 0;
   }
 
   @media ${device.mobileB} {
     top: 57%;
-  }
+  } */
 `;
 
 const Button = styled.a`
@@ -98,6 +98,16 @@ const ButtonGhost = styled(Button)`
   }
 `;
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: calc(100% - 9.4rem);
+`;
+
 export {
   Header,
   HeadingPrimary,
@@ -105,5 +115,6 @@ export {
   SubHeading,
   Wrapper,
   Button,
-  ButtonGhost
+  ButtonGhost,
+  Container
 };

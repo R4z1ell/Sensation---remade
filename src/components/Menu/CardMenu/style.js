@@ -27,6 +27,12 @@ const Card = styled.div`
     width: 60rem;
   }
 
+  @media ${device.tabletM} {
+    padding: 8.5rem 4.3rem 3rem 4.3rem;
+    margin-bottom: 12rem;
+    width: 48rem;
+  }
+
   &:hover {
     border-right: 5px solid #cfa670;
   }
@@ -90,6 +96,11 @@ const Image = styled.img`
   @media ${device.tabletL} {
     top: 27.5%;
     left: -15%;
+  }
+
+  @media ${device.tabletM} {
+    top: -21.5%;
+    left: 31%;
   }
 `;
 

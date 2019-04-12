@@ -12,7 +12,8 @@ import {
   SubHeading,
   Wrapper,
   Button,
-  ButtonGhost
+  ButtonGhost,
+  Container
 } from './style';
 
 const Home = () => {
@@ -34,28 +35,30 @@ const Home = () => {
   return (
     <Header>
       <Navigation />
-      <HeadingPrimary>
-        <MainHeading>
-          <Zoom top cascade>
-            Best place for family &#38; friends
-          </Zoom>
-        </MainHeading>
-        <SubHeading>
-          <Fade left cascade>
-            with delicious &#38; healthy food
+      <Container>
+        <HeadingPrimary>
+          <MainHeading>
+            <Zoom top cascade>
+              Best place for family &#38; friends
+            </Zoom>
+          </MainHeading>
+          <SubHeading>
+            <Fade left cascade>
+              with delicious &#38; healthy food
+            </Fade>
+          </SubHeading>
+        </HeadingPrimary>
+        <Wrapper>
+          <Fade bottom big>
+            <Button onClick={() => scrollToElement('Reservation')}>
+              book now
+            </Button>
+            <ButtonGhost onClick={() => scrollToElement('Footer')}>
+              contact us
+            </ButtonGhost>
           </Fade>
-        </SubHeading>
-      </HeadingPrimary>
-      <Wrapper>
-        <Fade bottom big>
-          <Button onClick={() => scrollToElement('Reservation')}>
-            book now
-          </Button>
-          <ButtonGhost onClick={() => scrollToElement('Footer')}>
-            contact us
-          </ButtonGhost>
-        </Fade>
-      </Wrapper>
+        </Wrapper>
+      </Container>
     </Header>
   );
 };

@@ -4,18 +4,23 @@ import { device } from '../../shared/MediaQueries';
 const SectionMenu = styled.section`
   max-width: 120rem;
   margin: 0 auto;
+  padding-top: 10rem;
 `;
 
 const ButtonMenu = styled.div`
   text-align: center;
-  margin: 10rem 0;
+  margin-bottom: 10rem;
 
   @media (max-width: 1100px) {
-    margin: 10rem 0 17rem 0;
+    margin-bottom: 17rem;
   }
 
   @media ${device.tabletL} {
-    margin: 10rem 0 10rem 0;
+    margin-bottom: 10rem;
+  }
+
+  @media ${device.tabletM} {
+    margin-bottom: 20rem;
   }
 `;
 
@@ -53,6 +58,10 @@ const PageMenu = styled.div`
   @media ${device.tabletL} {
     padding: 7rem 0 7rem 0;
   }
+
+  @media ${device.tabletM} {
+    padding: 0 0 7rem 0;
+  }
 `;
 
 const Page = styled.a`
@@ -88,6 +97,10 @@ const CardsWrapper = styled.div`
   @media ${device.tabletL} {
     justify-content: center;
     transform: translateX(4rem);
+  }
+
+  @media ${device.tabletM} {
+    transform: translateX(0);
   }
 `;
 

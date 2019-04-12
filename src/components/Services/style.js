@@ -75,7 +75,7 @@ const Text = styled.p`
 const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
-  margin-top: 6rem;
+  margin-top: 8rem;
   flex-wrap: wrap;
 `;
 
