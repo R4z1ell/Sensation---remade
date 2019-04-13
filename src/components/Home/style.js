@@ -13,11 +13,6 @@ const Header = styled.header`
 const HeadingPrimary = styled.h1`
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  font-weight: 700;
-  position: absolute;
-  width: 100%;
-  top: 44%; */
 `;
 
 const MainHeading = styled.span`
@@ -53,20 +48,7 @@ const SubHeading = styled.span`
 
 const Wrapper = styled.div`
   display: flex;
-  /* justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  top: 58%; */
   margin-top: 4rem;
-
-  /* @media ${device.desktopL} {
-    margin-top: 0;
-  }
-
-  @media ${device.mobileB} {
-    top: 57%;
-  } */
 `;
 
 const Button = styled.a`
@@ -108,6 +90,19 @@ const Container = styled.div`
   height: calc(100% - 9.4rem);
 `;
 
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
+  opacity: ${props => (props.visible ? '1' : '0')};
+  background-color: rgba(17, 17, 16, 0.6);
+  transition: all 0.3s;
+  z-index: 90;
+`;
+
 export {
   Header,
   HeadingPrimary,
@@ -116,5 +111,6 @@ export {
   Wrapper,
   Button,
   ButtonGhost,
-  Container
+  Container,
+  Overlay
 };

@@ -4,6 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
 import Navigation from './Navigation';
+import MobileNavContext from '../../shared/MobileNavContext';
 
 import {
   Header,
@@ -13,12 +14,13 @@ import {
   Wrapper,
   Button,
   ButtonGhost,
-  Container
+  Container,
+  Overlay
 } from './style';
 import MobileNav from './MobileNav';
 
 const Home = () => {
-  const [navMobile, setNavMobile] = useState(null);
+  const [sideNav, setSideNav] = useState(false);
 
   const scrollToElement = element => {
     if (element === 'Footer') {
@@ -35,14 +37,19 @@ const Home = () => {
     }
   };
 
-  const checkValue = value => {
-    setNavMobile(value);
+  const toggleSideNav = () => {
+    setSideNav(!sideNav);
   };
 
   return (
     <Header>
-      <Navigation sendToHome={checkValue} />
-      <MobileNav navStatus={navMobile} />
+      <MobileNavContext.Provider
+        value={{ mobileNavStatus: sideNav, toggleSideNav: toggleSideNav }}
+      >
+        <Navigation />
+        <MobileNav />
+      </MobileNavContext.Provider>
+      <Overlay visible={sideNav} onClick={toggleSideNav} />
       <Container>
         <HeadingPrimary>
           <MainHeading>

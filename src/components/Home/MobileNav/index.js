@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { scroller } from 'react-scroll';
+import MobileNavContext from '../../../shared/MobileNavContext';
 
 import {
   Wrapper,
@@ -14,18 +15,12 @@ import {
   Title
 } from './style';
 
-const MobileNav = props => {
-  const [mobileNavStatus, setMobileNavStatus] = useState(true);
-
-  useEffect(() => {
-    if (props.navStatus !== null) {
-      setMobileNavStatus(props.navStatus);
-    }
-  }, [props.navStatus]);
+const MobileNav = () => {
+  const mobileNav = useContext(MobileNavContext);
 
   const scrollToElement = element => {
     if (element === 'Home') {
-      setMobileNavStatus(true);
+      mobileNav.toggleSideNav();
       scroller.scrollTo(element, {
         duration: 1500,
         delay: 500,
@@ -33,7 +28,7 @@ const MobileNav = props => {
       });
     }
     if (element === 'Blog') {
-      setMobileNavStatus(true);
+      mobileNav.toggleSideNav();
       scroller.scrollTo(element, {
         duration: 1500,
         delay: 500,
@@ -42,7 +37,7 @@ const MobileNav = props => {
       });
     }
     if (element === 'Services') {
-      setMobileNavStatus(true);
+      mobileNav.toggleSideNav();
       scroller.scrollTo(element, {
         duration: 1500,
         delay: 500,
@@ -50,7 +45,7 @@ const MobileNav = props => {
         offset: -50
       });
     } else {
-      setMobileNavStatus(true);
+      mobileNav.toggleSideNav();
       scroller.scrollTo(element, {
         duration: 1500,
         delay: 500,
@@ -61,7 +56,7 @@ const MobileNav = props => {
   };
 
   return (
-    <Wrapper nav={mobileNavStatus}>
+    <Wrapper nav={mobileNav.mobileNavStatus}>
       <MainHeader>Sensation</MainHeader>
       <List>
         <Item onClick={() => scrollToElement('Home')}>

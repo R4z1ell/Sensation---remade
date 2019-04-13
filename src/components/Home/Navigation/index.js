@@ -12,7 +12,7 @@ import {
   Container
 } from './style';
 
-const Navigation = props => {
+const Navigation = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
 
   useEffect(() => {
@@ -57,10 +57,6 @@ const Navigation = props => {
     }
   };
 
-  const checkNavStatus = status => {
-    props.sendToHome(status);
-  };
-
   return (
     <NavigationWrapper offset={prevScrollpos}>
       <Container offset={prevScrollpos}>
@@ -89,7 +85,7 @@ const Navigation = props => {
             </NavigationItem>
           </NavigationList>
         </NavigationNav>
-        <Hamburger offset={prevScrollpos} sendNavStatus={checkNavStatus} />
+        <Hamburger offset={prevScrollpos} />
       </Container>
     </NavigationWrapper>
   );

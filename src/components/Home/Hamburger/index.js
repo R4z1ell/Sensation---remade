@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import MobileNavContext from '../../../shared/MobileNavContext';
 
 import { HamburgerWrapper, HamburgerInner } from './style';
 
 const Hamburger = props => {
-  const [iconStatus, setIconStatus] = useState(false);
+  const mobileNav = useContext(MobileNavContext);
 
   const handleHamburger = () => {
-    setIconStatus(!iconStatus);
-    props.sendNavStatus(iconStatus);
+    mobileNav.toggleSideNav();
   };
 
   return (
     <HamburgerWrapper onClick={handleHamburger} offset={props.offset}>
-      <HamburgerInner status={iconStatus} offset={props.offset} />
+      <HamburgerInner
+        status={mobileNav.mobileNavStatus}
+        offset={props.offset}
+      />
     </HamburgerWrapper>
   );
 };

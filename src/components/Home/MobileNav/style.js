@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   text-align: center;
   overflow-y: auto;
   transform: ${props =>
-    props.nav ? 'translateX(-50rem)' : 'translateX(0rem)'};
+    props.nav ? 'translateX(0rem)' : 'translateX(-50rem)'};
   transition: all 0.5s linear 0s;
 
   @media ${device.tabletL} {
@@ -59,6 +59,7 @@ const Address = styled.div`
   color: #aaa;
   text-align: left;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 `;
 
 const Gallery = styled.div`
