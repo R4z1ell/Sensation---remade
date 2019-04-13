@@ -30,7 +30,7 @@ const Footer = () => {
           <Info>
             <Image src="/images/location.png" />
             <div>
-              <Main>Vial Del Corso, 134</Main>
+              <Main>Via Del Corso, 134</Main>
               <Sub>Rome, Italy</Sub>
             </div>
           </Info>

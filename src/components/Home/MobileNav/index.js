@@ -1,0 +1,99 @@
+import React, { useState, useEffect } from 'react';
+import { scroller } from 'react-scroll';
+
+import {
+  Wrapper,
+  MainHeader,
+  List,
+  Item,
+  Link,
+  Phone,
+  Address,
+  Gallery,
+  Image,
+  Title
+} from './style';
+
+const MobileNav = props => {
+  const [mobileNavStatus, setMobileNavStatus] = useState(true);
+
+  useEffect(() => {
+    if (props.navStatus !== null) {
+      setMobileNavStatus(props.navStatus);
+    }
+  }, [props.navStatus]);
+
+  const scrollToElement = element => {
+    if (element === 'Home') {
+      setMobileNavStatus(true);
+      scroller.scrollTo(element, {
+        duration: 1500,
+        delay: 500,
+        smooth: true
+      });
+    }
+    if (element === 'Blog') {
+      setMobileNavStatus(true);
+      scroller.scrollTo(element, {
+        duration: 1500,
+        delay: 500,
+        smooth: true,
+        offset: window.innerWidth > 1300 ? -60 : -52.8
+      });
+    }
+    if (element === 'Services') {
+      setMobileNavStatus(true);
+      scroller.scrollTo(element, {
+        duration: 1500,
+        delay: 500,
+        smooth: true,
+        offset: -50
+      });
+    } else {
+      setMobileNavStatus(true);
+      scroller.scrollTo(element, {
+        duration: 1500,
+        delay: 500,
+        smooth: true,
+        offset: window.innerWidth > 1300 ? -60 : -52.8
+      });
+    }
+  };
+
+  return (
+    <Wrapper nav={mobileNavStatus}>
+      <MainHeader>Sensation</MainHeader>
+      <List>
+        <Item onClick={() => scrollToElement('Home')}>
+          <Link>Home</Link>
+        </Item>
+        <Item onClick={() => scrollToElement('Menu')}>
+          <Link>Menu</Link>
+        </Item>
+        <Item onClick={() => scrollToElement('Gallery')}>
+          <Link>Gallery</Link>
+        </Item>
+        <Item onClick={() => scrollToElement('Blog')}>
+          <Link>Blog</Link>
+        </Item>
+        <Item onClick={() => scrollToElement('Testimonials')}>
+          <Link>Testimonials</Link>
+        </Item>
+        <Item onClick={() => scrollToElement('Services')}>
+          <Link>Services</Link>
+        </Item>
+      </List>
+      <Gallery>
+        <Title>gallery</Title>
+        <Image src="/images/gallery-1.jpg" />
+        <Image src="/images/gallery-2.jpg" />
+        <Image src="/images/gallery-3.jpg" />
+        <Image src="/images/gallery-4.jpg" />
+      </Gallery>
+      <Phone>Phone: +065429932223</Phone>
+      <Address>Address: Via Del Corso, 134 - Rome</Address>
+    </Wrapper>
+  );
+};
+
+export default MobileNav;

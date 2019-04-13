@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
@@ -15,8 +15,11 @@ import {
   ButtonGhost,
   Container
 } from './style';
+import MobileNav from './MobileNav';
 
 const Home = () => {
+  const [navMobile, setNavMobile] = useState(null);
+
   const scrollToElement = element => {
     if (element === 'Footer') {
       scroller.scrollTo(element, {
@@ -32,9 +35,14 @@ const Home = () => {
     }
   };
 
+  const checkValue = value => {
+    setNavMobile(value);
+  };
+
   return (
     <Header>
-      <Navigation />
+      <Navigation sendToHome={checkValue} />
+      <MobileNav navStatus={navMobile} />
       <Container>
         <HeadingPrimary>
           <MainHeading>
