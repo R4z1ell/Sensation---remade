@@ -20,6 +20,14 @@ const Wrapper = styled.div`
   @media ${device.tabletL} {
     display: block;
   }
+
+  @media ${device.mobileM} {
+    width: 33rem;
+  }
+
+  @media ${device.mobileS} {
+    width: 29rem;
+  }
 `;
 
 const MainHeader = styled.h3`

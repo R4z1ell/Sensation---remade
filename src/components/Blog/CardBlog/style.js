@@ -39,6 +39,10 @@ const CardWrapper = styled.div`
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
 
+  @media ${device.mobileM} {
+    width: calc(120rem / 3.5 - 2.5%);
+  }
+
   &:hover ${Figure}:before {
     opacity: 1;
   }
@@ -120,6 +124,10 @@ const BottomPart = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+
+  @media ${device.mobileM} {
+    margin-top: 2rem;
+  }
 `;
 
 const ElementsWrapper = styled.div`

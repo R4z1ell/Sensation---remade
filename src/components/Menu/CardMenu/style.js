@@ -33,6 +33,19 @@ const Card = styled.div`
     width: 48rem;
   }
 
+  @media ${device.mobileB} {
+    width: 42rem;
+  }
+
+  @media ${device.mobileL} {
+    padding: 8.5rem 4% 3rem 4%;
+    width: 36rem;
+  }
+
+  @media ${device.mobileM} {
+    width: 31rem;
+  }
+
   &:hover {
     border-right: 5px solid #cfa670;
   }
@@ -42,6 +55,14 @@ const Heading = styled.h3`
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
+
+  @media ${device.mobileL} {
+    font-size: 1.8rem;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 1.7rem;
+  }
 `;
 
 const Price = styled.span`
@@ -57,6 +78,10 @@ const Price = styled.span`
   @media ${device.desktopS} {
     margin-right: 0rem;
   }
+
+  @media ${device.mobileL} {
+    font-size: 1.8rem;
+  }
 `;
 
 const Text = styled.p`
@@ -68,6 +93,14 @@ const Text = styled.p`
 
   @media (max-width: 1100px) {
     font-size: 1.9rem;
+  }
+
+  @media ${device.mobileB} {
+    font-size: 1.63rem;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 1.6rem;
   }
 `;
 
@@ -101,6 +134,18 @@ const Image = styled.img`
   @media ${device.tabletM} {
     top: -21.5%;
     left: 31%;
+  }
+
+  @media ${device.mobileB} {
+    left: 29.5%;
+  }
+
+  @media ${device.mobileL} {
+    left: 26%;
+  }
+
+  @media ${device.mobileM} {
+    left: 22%;
   }
 `;
 

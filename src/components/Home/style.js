@@ -13,6 +13,7 @@ const Header = styled.header`
 const HeadingPrimary = styled.h1`
   display: flex;
   flex-direction: column;
+  transform: translateY(-3rem);
 `;
 
 const MainHeading = styled.span`
@@ -23,10 +24,21 @@ const MainHeading = styled.span`
 
   @media ${device.tabletM} {
     font-size: 6.5rem;
+    line-height: 7rem;
   }
 
   @media ${device.mobileB} {
     font-size: 5.5rem;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 5rem;
+    margin-right: 5px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 4.2rem;
+    line-height: 6rem;
   }
 `;
 
@@ -37,18 +49,27 @@ const SubHeading = styled.span`
   line-height: 5rem;
 
   @media ${device.tabletM} {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
   }
 
   @media ${device.mobileB} {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 3rem;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 3rem;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 2.5rem;
   }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   margin-top: 4rem;
+  transform: translateY(-4rem);
 `;
 
 const Button = styled.a`
@@ -101,6 +122,7 @@ const Overlay = styled.div`
   background-color: rgba(17, 17, 16, 0.6);
   transition: all 0.3s;
   z-index: 90;
+  cursor: pointer;
 `;
 
 export {

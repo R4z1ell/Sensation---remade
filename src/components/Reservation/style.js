@@ -11,6 +11,10 @@ const Wrapper = styled.section`
   @media ${device.desktopS} {
     padding: 10.5% 0;
   }
+
+  @media ${device.mobileB} {
+    padding: 20.5% 0;
+  }
 `;
 
 const ReservationCard = styled.div`
@@ -24,6 +28,18 @@ const ReservationCard = styled.div`
     margin-bottom: 5rem;
   }
 
+  @media ${device.mobileB} {
+    width: 43rem;
+  }
+
+  @media ${device.mobileL} {
+    width: 37rem;
+  }
+
+  @media ${device.mobileM} {
+    width: 32rem;
+  }
+
   img {
     margin-top: 3.5rem;
   }
@@ -35,6 +51,11 @@ const MainHeading = styled.h2`
   font-family: 'Tangerine';
   line-height: 5.4rem;
   margin-top: 2rem;
+
+  @media ${device.mobileL} {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
 `;
 
 const SubHeading = styled.h2`
@@ -46,6 +67,18 @@ const SubHeading = styled.h2`
   @media ${device.desktopM} {
     font-size: 3.7rem;
   }
+
+  @media ${device.mobileB} {
+    font-size: 3.3rem;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 2.9rem;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 2.6rem;
+  }
 `;
 
 const Opening = styled.p`
@@ -54,6 +87,18 @@ const Opening = styled.p`
   font-size: 1.7rem;
   color: #3b3b3b;
   font-weight: 500;
+
+  @media ${device.mobileB} {
+    font-size: 1.6rem;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 1.4rem;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 1.2rem;
+  }
 `;
 
 const Container = styled.div`
@@ -76,6 +121,18 @@ const Form = styled.form`
   height: 55rem;
   width: 51rem;
   text-align: center;
+
+  @media ${device.mobileB} {
+    width: 43rem;
+  }
+
+  @media ${device.mobileL} {
+    width: 37rem;
+  }
+
+  @media ${device.mobileM} {
+    width: 32rem;
+  }
 
   #first {
     margin-top: 2rem;
@@ -128,6 +185,10 @@ const OpeningWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-top: 3.5rem;
+
+  @media ${device.mobileL} {
+    margin-top: 3.8rem;
+  }
 
   ${Opening}:first-of-type {
     width: 25.5%;

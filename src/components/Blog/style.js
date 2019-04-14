@@ -14,12 +14,20 @@ const MainHeading = styled.h2`
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
+
+  @media ${device.mobileB} {
+    line-height: 4rem;
+  }
 `;
 
 const SubHeading = styled.h2`
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
+
+  @media ${device.mobileM} {
+    font-size: 3.4rem;
+  }
 `;
 
 const CardsWrapper = styled.div`

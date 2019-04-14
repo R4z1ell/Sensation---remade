@@ -50,6 +50,14 @@ const ServiceCard = styled.div`
   @media ${device.mobileB} {
     width: 40rem;
   }
+
+  @media ${device.mobileL} {
+    width: 37rem;
+  }
+
+  @media ${device.mobileM} {
+    width: 31rem;
+  }
 `;
 
 const Image = styled.img`

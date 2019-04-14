@@ -58,9 +58,11 @@ const Navigation = () => {
   };
 
   return (
-    <NavigationWrapper offset={prevScrollpos}>
-      <Container offset={prevScrollpos}>
-        <NavigationLogo offset={prevScrollpos}>Sensation</NavigationLogo>
+    <NavigationWrapper offset={prevScrollpos} screenWidth={window.innerHeight}>
+      <Container offset={prevScrollpos} screenWidth={window.innerHeight}>
+        <NavigationLogo offset={prevScrollpos} screenWidth={window.innerHeight}>
+          Sensation
+        </NavigationLogo>
         <NavigationNav offset={prevScrollpos}>
           <NavigationList>
             <NavigationItem onClick={() => scrollToElement('Home')}>
@@ -85,7 +87,7 @@ const Navigation = () => {
             </NavigationItem>
           </NavigationList>
         </NavigationNav>
-        <Hamburger offset={prevScrollpos} />
+        <Hamburger offset={prevScrollpos} screenWidth={window.innerHeight} />
       </Container>
     </NavigationWrapper>
   );

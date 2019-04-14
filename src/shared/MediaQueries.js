@@ -6,7 +6,7 @@ const sizes = {
   tabletL: '811px',
   tabletM: '660px',
   tabletS: '625px',
-  mobileB: '550px',
+  mobileB: '500px',
   mobileL: '425px',
   mobileM: '375px',
   mobileS: '320px'

@@ -114,6 +114,14 @@ const InfoContainer = styled.div`
     align-items: center;
     padding: 0 7% 0 0;
   }
+
+  @media ${device.mobileB} {
+    padding: 0 10% 0 0;
+  }
+
+  @media ${device.mobileL} {
+    padding: 0 13% 0 0;
+  }
 `;
 
 const SvgWrapper = styled.div`
@@ -140,6 +148,22 @@ const SvgWrapper = styled.div`
 
   @media ${device.tabletS} {
     width: 26%;
+  }
+
+  @media ${device.tabletS} {
+    width: 26%;
+  }
+
+  @media ${device.mobileB} {
+    width: 31%;
+  }
+
+  @media ${device.mobileL} {
+    width: 36%;
+  }
+
+  @media ${device.mobileM} {
+    width: 43%;
   }
 `;
 

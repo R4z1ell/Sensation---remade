@@ -23,6 +23,11 @@ const SubHeading = styled.h2`
   font-size: 4rem;
   font-weight: 400;
   text-align: center;
+
+  @media ${device.mobileL} {
+    font-size: 3.3rem;
+    line-height: 4rem;
+  }
 `;
 
 const Image = styled.img`
@@ -37,6 +42,16 @@ const Image = styled.img`
 
   @media ${device.tabletM} {
     top: -22%;
+  }
+
+  @media ${device.mobileL} {
+    width: 10rem;
+    top: -19%;
+  }
+
+  @media ${device.mobileM} {
+    width: 8rem;
+    top: -14%;
   }
 `;
 
@@ -61,6 +76,10 @@ const Left = styled.div`
     height: 28.5rem;
   }
 
+  @media ${device.mobileM} {
+    height: 30.5rem;
+  }
+
   ${Image} {
     left: -12%;
 
@@ -78,6 +97,18 @@ const Left = styled.div`
 
     @media ${device.mobileB} {
       left: -15%;
+    }
+
+    @media ${device.mobileL} {
+      left: -17%;
+    }
+
+    @media ${device.mobileM} {
+      left: -16%;
+    }
+
+    @media ${device.mobileS} {
+      left: -18%;
     }
   }
 `;
@@ -102,6 +133,10 @@ const Right = styled.div`
     height: 28.5rem;
   }
 
+  @media ${device.mobileM} {
+    height: 30.5rem;
+  }
+
   ${Image} {
     right: -12%;
 
@@ -120,6 +155,18 @@ const Right = styled.div`
     @media ${device.mobileB} {
       right: -14%;
     }
+
+    @media ${device.mobileL} {
+      right: -16%;
+    }
+
+    @media ${device.mobileM} {
+      right: -14%;
+    }
+
+    @media ${device.mobileS} {
+      right: -17%;
+    }
   }
 `;
 
@@ -130,6 +177,15 @@ const Title = styled.h4`
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 5rem;
+
+  @media ${device.tabletS} {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  @media ${device.mobileM} {
+    margin-bottom: 3.5rem;
+  }
 `;
 
 const Text = styled.p`
@@ -137,6 +193,14 @@ const Text = styled.p`
   font-size: 1.7rem;
   line-height: 2.8rem;
   padding: 0 7%;
+
+  @media ${device.mobileL} {
+    font-size: 1.6rem;
+  }
+
+  @media ${device.mobileM} {
+    line-height: 2.5rem;
+  }
 `;
 
 const Pagination = styled.div`

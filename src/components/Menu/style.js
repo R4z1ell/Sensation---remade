@@ -40,6 +40,10 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
 
+  @media ${device.mobileL} {
+    padding: 1.5rem 1.5rem;
+  }
+
   &:hover {
     background-color: #cfa670;
     color: #232323;
