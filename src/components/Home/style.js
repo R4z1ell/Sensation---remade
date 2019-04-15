@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../shared/MediaQueries';
 
 const Header = styled.header`
-  background-image: url(/images/home-bck.jpg);
+  background-image: url(images/home-bck.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
