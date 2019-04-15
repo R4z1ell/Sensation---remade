@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   height: 100%;
   z-index: 100;
   padding: 0 6rem;
-  background: url(/images/nav-bck.jpg) no-repeat center bottom #111110;
+  background: url(images/nav-bck.jpg) no-repeat center bottom #111110;
   text-align: center;
   overflow-y: auto;
   transform: ${props =>

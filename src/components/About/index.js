@@ -29,10 +29,10 @@ const About = () => {
         </Story>
       </Wrapper>
       <WrapperImages>
-        <img src="/images/steak.jpg" alt="steak" />
+        <img src="images/steak.jpg" alt="steak" />
         <ImagesContainer>
-          <img src="/images/dessert-1.png" alt="dessert-1" />
-          <img src="/images/dessert-2.png" alt="dessert-2" />
+          <img src="images/dessert-1.png" alt="dessert-1" />
+          <img src="images/dessert-2.png" alt="dessert-2" />
         </ImagesContainer>
       </WrapperImages>
     </AboutUs>

@@ -80,10 +80,10 @@ const MobileNav = () => {
       </List>
       <Gallery>
         <Title>gallery</Title>
-        <Image src="/images/gallery-1.jpg" />
-        <Image src="/images/gallery-2.jpg" />
-        <Image src="/images/gallery-3.jpg" />
-        <Image src="/images/gallery-4.jpg" />
+        <Image src="images/gallery-1.jpg" />
+        <Image src="images/gallery-2.jpg" />
+        <Image src="images/gallery-3.jpg" />
+        <Image src="images/gallery-4.jpg" />
       </Gallery>
       <Phone>Phone: +065429932223</Phone>
       <Address>Address: Via Del Corso, 134 - Rome</Address>

@@ -23,7 +23,7 @@ const Reservation = () => {
         <ReservationCard>
           <MainHeading>Opening Hours</MainHeading>
           <SubHeading>Open for Special Occasions</SubHeading>
-          <img src="/images/clock.png" alt="clock" />
+          <img src="images/clock.png" alt="clock" />
           <OpeningWrapper>
             <Opening>
               Monday-Thursday <span>08AM-10PM</span>

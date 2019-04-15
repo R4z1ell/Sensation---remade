@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../shared/MediaQueries';
 
 const Wrapper = styled.section`
-  background-image: url(/images/reservation-bck.png);
+  background-image: url(images/reservation-bck.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

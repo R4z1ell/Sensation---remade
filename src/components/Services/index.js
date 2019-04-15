@@ -18,21 +18,21 @@ const Services = () => {
       <SubHeading>Our Great Services</SubHeading>
       <Container>
         <ServiceCard>
-          <Image src="/images/calendar-two.png" />
+          <Image src="images/calendar-two.png" />
           <Title>Opened 24/7</Title>
           <Text>
             Sensation Restaurant is open 24/7 to satisfy all customers!
           </Text>
         </ServiceCard>
         <ServiceCard>
-          <Image src="/images/dinner.png" />
+          <Image src="images/dinner.png" />
           <Title>Special Menu</Title>
           <Text>
             Ask for our daily specials including the vegetarian dish of the day
           </Text>
         </ServiceCard>
         <ServiceCard>
-          <Image src="/images/delivery.png" />
+          <Image src="images/delivery.png" />
           <Title>Home Delivery</Title>
           <Text>
             Everyday essentials delivered on time with a schedule you set

@@ -22,32 +22,32 @@ const Menu = () => {
         <CardMenu
           heading="Salad with lamb and raspberries"
           price="$23"
-          img="/images/salad.jpg"
+          img="images/salad.jpg"
         />
         <CardMenu
           heading="Fresh gnocchi with lemon sauce"
           price="$16"
-          img="/images/gnocchi.jpg"
+          img="images/gnocchi.jpg"
         />
         <CardMenu
           heading="Pasta with cheese and herbs"
           price="$21"
-          img="/images/pasta.jpg"
+          img="images/pasta.jpg"
         />
         <CardMenu
           heading="Grilled pork chop with potatoes"
           price="$28"
-          img="/images/pork.jpg"
+          img="images/pork.jpg"
         />
         <CardMenu
           heading="Pinot noir glazed salmon"
           price="$45"
-          img="/images/pinot.jpg"
+          img="images/pinot.jpg"
         />
         <CardMenu
           heading="Grilled octopus with cream"
           price="$37"
-          img="/images/octopus.jpg"
+          img="images/octopus.jpg"
         />
       </CardsWrapper>
       <PageMenu>

@@ -32,7 +32,7 @@ const CardBlog = props => {
       </Text>
       <BottomPart>
         <ElementsWrapper>
-          <Image src="/images/calendar.png" />
+          <Image src="images/calendar.png" />
           <Date>{props.date}</Date>
         </ElementsWrapper>
         <ReadMore>Read More &#62;</ReadMore>
