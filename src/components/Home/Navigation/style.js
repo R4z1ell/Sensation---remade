@@ -3,32 +3,32 @@ import { device } from '../../../shared/MediaQueries';
 
 const NavigationWrapper = styled.div`
   display: flex;
-  position: ${props => (props.offset > 1007 ? 'fixed' : '')};
+  position: ${props => (props.offset > props.value ? 'fixed' : '')};
   justify-content: space-between;
   align-items: center;
-  max-width: ${props => (props.offset > 1007 ? '100%' : '120rem')};
-  width: ${props => (props.offset > 1007 ? '100%' : '')};
-  height: ${props => (props.offset > 1007 ? '6rem' : '')};
+  max-width: ${props => (props.offset > props.value ? '100%' : '120rem')};
+  width: ${props => (props.offset > props.value ? '100%' : '')};
+  height: ${props => (props.offset > props.value ? '6rem' : '')};
   margin: 0 auto;
-  background-color: ${props => (props.offset > 1007 ? '#fff' : '')};
+  background-color: ${props => (props.offset > props.value ? '#fff' : '')};
   box-shadow: ${props =>
-    props.offset > 1007 ? '1px 0px 5px 2px rgba(0,0,0,0.1)' : ''};
-  z-index: ${props => (props.offset > 1007 ? '50' : '')};
+    props.offset > props.value ? '1px 0px 5px 2px rgba(0,0,0,0.1)' : ''};
+  z-index: ${props => (props.offset > props.value ? '50' : '')};
 
   @media ${device.desktopL} {
-    max-width: ${props => (props.offset > 1007 ? '100%' : '92%')};
+    max-width: ${props => (props.offset > props.value ? '100%' : '92%')};
   }
 `;
 
 const NavigationLogo = styled.div`
   font-family: 'Tangerine';
-  font-size: ${props => (props.offset > 1007 ? '4.9rem' : '5.9rem')};
+  font-size: ${props => (props.offset > props.value ? '4.9rem' : '5.9rem')};
   font-weight: 700;
-  color: ${props => (props.offset > 1007 ? '#232323' : '#fff')};
+  color: ${props => (props.offset > props.value ? '#232323' : '#fff')};
 `;
 
 const NavigationNav = styled.nav`
-  margin-top: ${props => (props.offset > 1007 ? '0' : '1.4rem')};
+  margin-top: ${props => (props.offset > props.value ? '0' : '1.4rem')};
 `;
 
 const NavigationList = styled.ul`
@@ -70,16 +70,16 @@ const NavigationItem = styled.li`
 `;
 
 const Container = styled.div`
-  display: ${props => (props.offset > 1007 ? 'flex' : 'flex')};
-  align-items: ${props => (props.offset > 1007 ? 'center' : 'center')};
+  display: ${props => (props.offset > props.value ? 'flex' : 'flex')};
+  align-items: ${props => (props.offset > props.value ? 'center' : 'center')};
   justify-content: ${props =>
-    props.offset > 1007 ? 'space-between' : 'space-between'};
-  width: ${props => (props.offset > 1007 ? '120rem' : '100%')};
-  margin: ${props => (props.offset > 1007 ? '0 auto' : '')};
-  height: ${props => (props.offset > 1007 ? '6rem' : '')};
+    props.offset > props.value ? 'space-between' : 'space-between'};
+  width: ${props => (props.offset > props.value ? '120rem' : '100%')};
+  margin: ${props => (props.offset > props.value ? '0 auto' : '')};
+  height: ${props => (props.offset > props.value ? '6rem' : '')};
 
   @media ${device.desktopL} {
-    width: ${props => (props.offset > 1007 ? '90%' : '100%')};
+    width: ${props => (props.offset > props.value ? '90%' : '100%')};
   }
 `;
 

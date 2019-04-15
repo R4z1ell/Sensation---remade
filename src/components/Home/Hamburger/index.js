@@ -11,10 +11,15 @@ const Hamburger = props => {
   };
 
   return (
-    <HamburgerWrapper onClick={handleHamburger} offset={props.offset}>
+    <HamburgerWrapper
+      onClick={handleHamburger}
+      offset={props.offset}
+      value={props.value}
+    >
       <HamburgerInner
         status={mobileNav.mobileNavStatus}
         offset={props.offset}
+        value={props.value}
       />
     </HamburgerWrapper>
   );

@@ -4,7 +4,7 @@ import { device } from '../../../shared/MediaQueries';
 const HamburgerWrapper = styled.div`
   display: none;
   height: 38px;
-  margin-top: ${props => (props.offset > 1007 ? '0px' : '8px')};
+  margin-top: ${props => (props.offset > props.value ? '0px' : '8px')};
   transition-timing-function: linear;
   transition-duration: 0.15s;
   transition-property: opacity, filter;
@@ -27,7 +27,8 @@ const HamburgerInner = styled.div`
   transition-duration: 0.15s;
   transition-property: transform;
   border-radius: 2px;
-  background-color: ${props => (props.offset > 1007 ? '#232323' : '#fff')};
+  background-color: ${props =>
+    props.offset > props.value ? '#232323' : '#fff'};
   margin-top: 1rem;
   transform: ${props =>
     props.status ? 'translate3d(0,10px,0) rotate(45deg)' : ''};
@@ -42,7 +43,8 @@ const HamburgerInner = styled.div`
     transition-duration: 0.15s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: ${props => (props.offset > 1007 ? '#232323' : '#fff')};
+    background-color: ${props =>
+      props.offset > props.value ? '#232323' : '#fff'};
   }
 
   &:after {

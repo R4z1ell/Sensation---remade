@@ -14,6 +14,7 @@ import {
 
 const Navigation = () => {
   const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
+  const windowHeight = window.innerHeight - 60;
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -58,12 +59,12 @@ const Navigation = () => {
   };
 
   return (
-    <NavigationWrapper offset={prevScrollpos} screenWidth={window.innerHeight}>
-      <Container offset={prevScrollpos} screenWidth={window.innerHeight}>
-        <NavigationLogo offset={prevScrollpos} screenWidth={window.innerHeight}>
+    <NavigationWrapper offset={prevScrollpos} value={windowHeight}>
+      <Container offset={prevScrollpos} value={windowHeight}>
+        <NavigationLogo offset={prevScrollpos} value={windowHeight}>
           Sensation
         </NavigationLogo>
-        <NavigationNav offset={prevScrollpos}>
+        <NavigationNav offset={prevScrollpos} value={windowHeight}>
           <NavigationList>
             <NavigationItem onClick={() => scrollToElement('Home')}>
               <NavigationLink offset={prevScrollpos}>Home</NavigationLink>
@@ -87,7 +88,7 @@ const Navigation = () => {
             </NavigationItem>
           </NavigationList>
         </NavigationNav>
-        <Hamburger offset={prevScrollpos} screenWidth={window.innerHeight} />
+        <Hamburger offset={prevScrollpos} value={windowHeight} />
       </Container>
     </NavigationWrapper>
   );

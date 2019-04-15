@@ -21,12 +21,18 @@ const Wrapper = styled.div`
     display: block;
   }
 
+  @media ${device.mobileL} {
+    padding: 0 5rem;
+  }
+
   @media ${device.mobileM} {
     width: 33rem;
+    padding: 0 4rem;
   }
 
   @media ${device.mobileS} {
     width: 29rem;
+    padding: 0 3rem;
   }
 `;
 
@@ -68,6 +74,7 @@ const Address = styled.div`
   text-align: left;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+  white-space: nowrap;
 `;
 
 const Gallery = styled.div`
