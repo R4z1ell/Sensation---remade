@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "ec7e6aeacde48c39a98a",
-    "url": "/Sensation---remade/static/js/main.1e49e5fc.chunk.js"
+    "revision": "0df8cd776733d4ddfa1e",
+    "url": "/Sensation---remade/static/js/main.fc518e63.chunk.js"
   },
   {
     "revision": "27fd582200f667224fbc",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/Sensation---remade/static/js/2.780b8572.chunk.js"
   },
   {
-    "revision": "28f02ca7dc9c31c467ac12da6728442c",
+    "revision": "519696bb1eeba1de640675838e981d29",
     "url": "/Sensation---remade/index.html"
   }
 ];
